@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bealsbqfo44b1"]
+
+[ext_resource type="Script" uid="uid://ceyh3vepgpwxx" path="res://Scenes/time_machine.gd" id="1_p8spp"]
+[ext_resource type="Texture2D" uid="uid://b816i75qryskg" path="res://icon.svg" id="2_ha3n0"]
+[ext_resource type="PackedScene" uid="uid://66gfjenmp1vp" path="res://Scenes/epochmenu.tscn" id="2_nyf01"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qjc35"]
+size = Vector2(95, 79)
+
+[node name="TimeMachine" type="Area2D" unique_id=545265893]
+script = ExtResource("1_p8spp")
+epoch_menu_scene = ExtResource("2_nyf01")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=59003414]
+position = Vector2(39.25, 32.25)
+scale = Vector2(0.66796875, 0.5429687)
+texture = ExtResource("2_ha3n0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=870190051]
+position = Vector2(38, 33)
+shape = SubResource("RectangleShape2D_qjc35")
+
+[node name="HintLabel" type="Label" parent="." unique_id=837094526]
+offset_left = -42.0
+offset_top = -34.0
+offset_right = 116.0
+offset_bottom = -11.0
+text = "[E] Путешествовать"

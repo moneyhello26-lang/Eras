@@ -325,7 +325,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=1705881190]
+[node name="Player" type="CharacterBody2D" unique_id=1705881190 groups=["player"]]
 script = ExtResource("1_3c51y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=635074397]
@@ -339,3 +339,8 @@ sprite_frames = SubResource("SpriteFrames_5xm0m")
 animation = &"Idle"
 frame = 1
 frame_progress = 0.7712372
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=505928284]
+zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_bottom = 650
