@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://pttbybg65585"]
 
+[ext_resource type="Script" uid="uid://4j7us2jaa0wl" path="res://Character/player.gd" id="1_3c51y"]
 [ext_resource type="Texture2D" uid="uid://b6nxxklrd424x" path="res://Sprites/NoobSprite.png" id="1_6ele1"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bfpf6"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3c51y"]
+size = Vector2(93, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3c51y"]
 atlas = ExtResource("1_6ele1")
@@ -324,12 +326,16 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=1705881190]
+script = ExtResource("1_3c51y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=635074397]
-shape = SubResource("CapsuleShape2D_bfpf6")
+position = Vector2(1.5, 10)
+shape = SubResource("RectangleShape2D_3c51y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=291499717]
-position = Vector2(0, 2.9802322e-08)
-scale = Vector2(1.1875, 1.2812501)
+position = Vector2(-1.0000005, -4.999999)
+scale = Vector2(6.9713693, 7.6880646)
 sprite_frames = SubResource("SpriteFrames_5xm0m")
 animation = &"Idle"
+frame = 1
+frame_progress = 0.7712372
