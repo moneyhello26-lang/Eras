@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ciyxof4fgknd7"]
+
+[ext_resource type="Texture2D" uid="uid://bbx661pdchdph" path="res://Sprites/sewer/pc/pc1.png" id="1_voyys"]
+[ext_resource type="Script" uid="uid://d38u44yk6ax4f" path="res://Sprites/generator.gd" id="1_wsbom"]
+[ext_resource type="Texture2D" uid="uid://ch8iwpcal5661" path="res://Sprites/sewer/pc/pc2.png" id="2_wsbom"]
+[ext_resource type="Texture2D" uid="uid://cwy8utwttbblj" path="res://Sprites/sewer/pc/pc3.png" id="3_ieun5"]
+[ext_resource type="Texture2D" uid="uid://ca37dlsdrrubg" path="res://Sprites/sewer/pc/pc4.png" id="4_aepu0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q8cbj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_voyys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wsbom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ieun5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_aepu0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Generator_tscn" type="Node2D" unique_id=1681416503]
+position = Vector2(94, 51)
+script = ExtResource("1_wsbom")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1141809802]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1779156424]
+texture = ExtResource("1_voyys")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1673424581]
+sprite_frames = SubResource("SpriteFrames_q8cbj")
+autoplay = "default"
+frame_progress = 0.9101937
