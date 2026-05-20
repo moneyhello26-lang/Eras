@@ -41,6 +41,9 @@ var djump_anim_active: bool = false  # двойной прыжок ещё игр
 # ──────────────────────────────────────────────
 
 func _ready() -> void:
+	add_to_group("Player")
+	add_to_group("player")
+	
 	has_double_jump = can_double_jump
 	sprite.animation_finished.connect(_on_animation_finished)
 

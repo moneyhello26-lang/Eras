@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://cwy8utwttbblj" path="res://Sprites/sewer/pc/pc3.png" id="3_ieun5"]
 [ext_resource type="Texture2D" uid="uid://ca37dlsdrrubg" path="res://Sprites/sewer/pc/pc4.png" id="4_aepu0"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_voyys"]
+radius = 9.055386
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_q8cbj"]
 animations = [{
 "frames": [{
@@ -31,6 +34,9 @@ position = Vector2(94, 51)
 script = ExtResource("1_wsbom")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1141809802]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1987960852]
+shape = SubResource("CircleShape2D_voyys")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1779156424]
 texture = ExtResource("1_voyys")
