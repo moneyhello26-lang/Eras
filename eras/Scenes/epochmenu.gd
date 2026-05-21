@@ -7,11 +7,11 @@ extends CanvasLayer
 
 # Список эпох: название => путь к сцене
 const EPOCHS: Array[Dictionary] = [
-	{"name": "🦕  Доисторическая эра",  "scene": "res://Scenes/prehistoric_era.tscn"},
-	{"name": "🏛️  Древний Рим",          "scene": "res://scenes/ancient_world.tscn"},
-	{"name": "⚔️  Средневековье",        "scene": "res://scenes/middle_ages.tscn"},
-	{"name": "🏭  Индустриальная эпоха", "scene": "res://scenes/early_modern_period.tscn"},
-	{"name": "🚀  Далёкое будущее",      "scene": "res://scenes/late_modern_period.tscn"},
+	{"name": "Доисторическая эра",  "scene": "res://Scenes/prehistoric_era.tscn"},
+	{"name": "Древний Рим",          "scene": "res://scenes/ancient_world.tscn"},
+	{"name": "Средневековье",        "scene": "res://scenes/middle_ages.tscn"},
+	{"name": "Индустриальная эпоха", "scene": "res://scenes/early_modern_period.tscn"},
+	{"name": "Далёкое будущее",      "scene": "res://scenes/late_modern_period.tscn"},
 ]
 
 @onready var buttons_container: VBoxContainer = $Panel/VBoxContainer
