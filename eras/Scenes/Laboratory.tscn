@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://dqpwtabhdgke7" path="res://Sprites/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/level_tileset.png" id="6_7pvp2"]
 [ext_resource type="Texture2D" uid="uid://bqoepcasnfjud" path="res://Sprites/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/platform_moving.png" id="7_ekcok"]
 [ext_resource type="PackedScene" uid="uid://bealsbqfo44b1" path="res://Scenes/TimeMachine.tscn" id="8_1jcvg"]
-[ext_resource type="PackedScene" uid="uid://ciyxof4fgknd7" path="res://Sprites/Generator.tscn" id="9_xfmuj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_522oh"]
 texture = ExtResource("5_ykdod")
@@ -1333,7 +1332,3 @@ layer_0/tile_data = PackedInt32Array(1900551, 1, 0, 1900552, 65537, 0, 1900553, 
 
 [node name="TimeMachine" parent="." unique_id=545265893 instance=ExtResource("8_1jcvg")]
 position = Vector2(279, 379)
-
-[node name="Generator_tscn" parent="." unique_id=1681416503 instance=ExtResource("9_xfmuj")]
-position = Vector2(745, 395)
-scale = Vector2(6, 6)

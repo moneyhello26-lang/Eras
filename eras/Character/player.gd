@@ -281,3 +281,28 @@ func die() -> void:
 		_force_anim("Death_in_Air")
 	await sprite.animation_finished
 	$CollisionShape2D.set_deferred("disabled", true)
+
+# Добавьте этот метод в самый конец вашего player.gd
+func take_damage(amount: int) -> void:
+	if not is_alive:
+		return
+		
+	print("Игрок получил урон: ", amount)
+	
+	# Проигрываем анимацию получения удара (у вас в коде упоминается "Hit")
+	if has_method("_force_anim"):
+		_force_anim("Hit")
+	
+	# Мгновенная смерть при падении на шипы (самый частый кейс для хардкорных платформеров)
+	die_spike()
+
+func die_spike() -> void:
+	is_alive = false
+	velocity = Vector2.ZERO # Останавливаем игрока
+	
+	if has_method("_force_anim"):
+		_force_anim("Death") # Запускаем вашу анимацию смерти
+	
+	# Даем игроку 1 секунду посмотреть на свою гибель, затем перезапускаем уровень
+	await get_tree().create_timer(1.0).timeout
+	get_tree().reload_current_scene()

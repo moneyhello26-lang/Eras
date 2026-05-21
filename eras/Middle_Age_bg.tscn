@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://dbu586yq8mmkx"]
+
+[ext_resource type="Texture2D" uid="uid://cde88r6kedibp" path="res://Sprites/background 2/Plan 1.png" id="1_a5l0o"]
+[ext_resource type="Script" uid="uid://ckm15qnbpiwu0" path="res://middle_age_bg.gd" id="1_lpaql"]
+[ext_resource type="Texture2D" uid="uid://b1ky27eo4xuyh" path="res://Sprites/background 2/Plan 2.png" id="2_lpaql"]
+[ext_resource type="Texture2D" uid="uid://bedxyvttayqkj" path="res://Sprites/background 2/Plan 3.png" id="3_kjtmu"]
+[ext_resource type="Texture2D" uid="uid://dtqv3v3eiv8ml" path="res://Sprites/background 2/Plan 4.png" id="4_iuyfm"]
+
+[node name="MiddleAgeBg" type="Node2D" unique_id=1150703533]
+script = ExtResource("1_lpaql")
+
+[node name="Layer1_Sky" type="Parallax2D" parent="." unique_id=1148433984]
+z_index = -6
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(0, 20)
+repeat_size = Vector2(575, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Layer1_Sky" unique_id=1448012666]
+z_index = -2
+texture = ExtResource("1_a5l0o")
+centered = false
+
+[node name="Layer2_Clouds" type="Parallax2D" parent="." unique_id=1367276636]
+z_index = -6
+scroll_scale = Vector2(0.1, 0.05)
+scroll_offset = Vector2(0, 20)
+repeat_size = Vector2(575, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Layer2_Clouds" unique_id=542880519]
+z_index = 1
+texture = ExtResource("2_lpaql")
+centered = false
+
+[node name="Layer3_Mountains" type="Parallax2D" parent="." unique_id=80443157]
+z_index = -7
+scroll_scale = Vector2(0.3, 0.1)
+scroll_offset = Vector2(0, 20)
+repeat_size = Vector2(575, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Layer3_Mountains" unique_id=1213513317]
+texture = ExtResource("3_kjtmu")
+centered = false
+
+[node name="Layer4_Hills" type="Parallax2D" parent="." unique_id=705529301]
+z_index = -9
+scroll_scale = Vector2(0.5, 0.15)
+scroll_offset = Vector2(0, 20)
+repeat_size = Vector2(575, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Layer4_Hills" unique_id=26058770]
+position = Vector2(-3, 0)
+texture = ExtResource("4_iuyfm")
+centered = false

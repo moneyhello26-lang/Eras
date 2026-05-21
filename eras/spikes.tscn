@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bqimlynxj341u"]
+
+[ext_resource type="Script" uid="uid://bjkwge4c6od1o" path="res://spikes.gd" id="1_s0g1x"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s0g1x"]
+
+[node name="Spikes" type="Area2D" unique_id=1191043946]
+script = ExtResource("1_s0g1x")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1285089136]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=625675978]
+shape = SubResource("CapsuleShape2D_s0g1x")

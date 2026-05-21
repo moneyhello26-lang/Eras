@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://cjq28gg5iq5x1"]
+
+[ext_resource type="Script" uid="uid://bdc2svcb782pj" path="res://court_mini_game.gd" id="1_4so6d"]
+
+[node name="CourtMiniGame" type="Control" unique_id=924925908]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4so6d")
+
+[node name="BackGround" type="ColorRect" parent="." unique_id=1200345872]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 649.0
+color = Color(0, 0.08782518, 0.0046740854, 1)
+
+[node name="DialoguePanel" type="Panel" parent="." unique_id=729917689]
+z_index = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 23.0
+offset_right = 1034.0
+offset_bottom = 336.0
+
+[node name="SpeakerName" type="Label" parent="DialoguePanel" unique_id=623583916]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 975.0
+offset_bottom = 37.0
+
+[node name="DialogueText" type="Label" parent="DialoguePanel" unique_id=1300029522]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 52.0
+offset_right = 993.0
+offset_bottom = 292.0
+
+[node name="EvidencePanel" type="Panel" parent="." unique_id=284941891]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 372.0
+offset_right = 573.0
+offset_bottom = 589.0
+
+[node name="EvidenceList" type="ItemList" parent="EvidencePanel" unique_id=172940975]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 18.0
+offset_right = 529.0
+offset_bottom = 115.0
+
+[node name="PresentButton" type="Button" parent="EvidencePanel" unique_id=1124678409]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 160.0
+offset_right = 357.0
+offset_bottom = 203.0
+
+[node name="NavPanel" type="HBoxContainer" parent="." unique_id=297585051]
+layout_mode = 0
+offset_left = 641.0
+offset_top = 512.0
+offset_right = 1050.0
+offset_bottom = 552.0
+
+[node name="PrevButton" type="Button" parent="NavPanel" unique_id=1827939563]
+layout_mode = 2
+
+[node name="NextButton" type="Button" parent="NavPanel" unique_id=77048346]
+layout_mode = 2
