@@ -72,10 +72,20 @@ func _load_phase(index: int) -> void:
 
 func _fill_evidence_ui() -> void:
 	evidence_list.clear()
-	for id in evidence_database:
-		evidence_list.add_item(evidence_database[id]["name"])
-		var last_idx = evidence_list.get_item_count() - 1
-		evidence_list.set_item_metadata(last_idx, id)
+
+	for id in GlobalInventory.collected_evidence:
+		# Если ID из инвентаря существует в нашей базе данных суда, выводим его
+		if evidence_database.has(id):
+			var item_name = evidence_database[id]["name"]
+			evidence_list.add_item(item_name)
+			
+			# Привязываем ID к элементу интерфейса
+			var last_idx = evidence_list.get_item_count() - 1
+			evidence_list.set_item_metadata(last_idx, id)
+			
+	# На случай, если хардкорный игрок пришел в суд вообще без улик:
+	if evidence_list.get_item_count() == 0:
+		evidence_desc.text = "⚠️ В КПК нет исторических данных. Вы не нашли ни одной улики на уровне! Опровергнуть ложь инквизитора будет невозможно..."
 
 func _on_evidence_selected(index: int) -> void:
 	var id = evidence_list.get_item_metadata(index)

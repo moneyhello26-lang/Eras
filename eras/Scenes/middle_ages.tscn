@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://buk0fbicl1gxd" path="res://Sprites/CastleOnTheMountains-Valrok.png" id="4_0jjtn"]
 [ext_resource type="PackedScene" uid="uid://dbu586yq8mmkx" path="res://Middle_Age_bg.tscn" id="6_gob2d"]
 [ext_resource type="PackedScene" uid="uid://bqimlynxj341u" path="res://spikes.tscn" id="7_rq7nc"]
+[ext_resource type="PackedScene" uid="uid://hphgnfmkimeg" path="res://collectible_evidence.tscn" id="8_rss5t"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7qxxc"]
 
@@ -1615,3 +1616,12 @@ position = Vector2(1532, 532)
 
 [node name="Spikes8" parent="." unique_id=81941281 instance=ExtResource("7_rq7nc")]
 position = Vector2(1754, 517)
+
+[node name="CollectibleEvidence" parent="." unique_id=1778941576 instance=ExtResource("8_rss5t")]
+position = Vector2(1213, 611)
+
+[node name="CollectibleEvidence2" parent="." unique_id=977225850 instance=ExtResource("8_rss5t")]
+position = Vector2(1859, 497)
+
+[node name="CollectibleEvidence3" parent="." unique_id=498408656 instance=ExtResource("8_rss5t")]
+position = Vector2(1102, 405)

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://hphgnfmkimeg"]
+
+[ext_resource type="Script" uid="uid://4bwl64x4ihf3" path="res://collectible_evidence.gd" id="1_142dd"]
+
+[node name="CollectibleEvidence" type="Area2D" unique_id=1778941576]
+script = ExtResource("1_142dd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=829087806]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=626881921]
