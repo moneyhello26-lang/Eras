@@ -14,6 +14,7 @@
 [node name="BGOutside" type="ParallaxBackground" parent="." unique_id=111141409]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="BGOutside" unique_id=1076754400]
+motion_mirroring = Vector2(1150, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="BGOutside/ParallaxLayer" unique_id=2064795691]
 position = Vector2(580.25, 322.25)
@@ -21,6 +22,7 @@ scale = Vector2(3.0039063, 3.6562498)
 texture = ExtResource("2_kib8w")
 
 [node name="ParallaxLayer7" type="ParallaxLayer" parent="BGOutside" unique_id=198419842]
+motion_mirroring = Vector2(1150, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="BGOutside/ParallaxLayer7" unique_id=429511603]
 position = Vector2(580, 326)
@@ -28,6 +30,7 @@ scale = Vector2(2.983073, 3.59375)
 texture = ExtResource("2_kib8w")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="BGOutside" unique_id=211731000]
+motion_mirroring = Vector2(1150, 0)
 
 [node name="Sprite2D3" type="Sprite2D" parent="BGOutside/ParallaxLayer2" unique_id=231000560]
 position = Vector2(576.87506, 312.75)
@@ -35,6 +38,7 @@ scale = Vector2(3.0058596, 3.4517045)
 texture = ExtResource("2_qxah3")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="BGOutside" unique_id=582151478]
+motion_mirroring = Vector2(1150, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="BGOutside/ParallaxLayer3" unique_id=1460496176]
 position = Vector2(576, 321.5)
@@ -42,6 +46,7 @@ scale = Vector2(3, 3.619318)
 texture = ExtResource("4_5dpvk")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="BGOutside" unique_id=1620237468]
+motion_mirroring = Vector2(1150, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="BGOutside/ParallaxLayer4" unique_id=16787628]
 position = Vector2(579, 321)
@@ -49,8 +54,12 @@ scale = Vector2(3.0052085, 3.659091)
 texture = ExtResource("3_kib8w")
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="BGOutside" unique_id=2075649681]
+motion_mirroring = Vector2(1150, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="BGOutside/ParallaxLayer5" unique_id=1180549420]
 position = Vector2(579.00006, 329)
 scale = Vector2(3, 3.6392043)
 texture = ExtResource("5_qs7a7")
+
+[node name="TileMap" type="TileMap" parent="." unique_id=1331495079]
+format = 2
