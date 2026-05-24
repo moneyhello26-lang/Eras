@@ -1294,10 +1294,12 @@ sources/1 = SubResource("TileSetAtlasSource_3sr4d")
 sources/2 = SubResource("TileSetAtlasSource_57vlx")
 
 [node name="Laboratory" type="Node2D" unique_id=545712401]
+position = Vector2(4, 0)
 
 [node name="BG" type="ParallaxBackground" parent="." unique_id=1615627811]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="BG" unique_id=1714750307]
+position = Vector2(4, 0)
 motion_mirroring = Vector2(1160, 0)
 
 [node name="Back" type="Sprite2D" parent="BG/ParallaxLayer" unique_id=516818833]
@@ -1306,6 +1308,7 @@ scale = Vector2(3.6312497, 2.7854168)
 texture = ExtResource("1_446ts")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="BG" unique_id=667985758]
+position = Vector2(4, 0)
 motion_mirroring = Vector2(1160, 0)
 
 [node name="Middle" type="Sprite2D" parent="BG/ParallaxLayer2" unique_id=143594120]
@@ -1314,7 +1317,7 @@ scale = Vector2(1.8003905, 2.0630207)
 texture = ExtResource("2_1jcvg")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="BG" unique_id=669392163]
-position = Vector2(-4, 2)
+position = Vector2(0, 2)
 motion_mirroring = Vector2(1160, 0)
 
 [node name="Front" type="Sprite2D" parent="BG/ParallaxLayer3" unique_id=829568182]
@@ -1332,3 +1335,10 @@ layer_0/tile_data = PackedInt32Array(1900551, 1, 0, 1900552, 65537, 0, 1900553, 
 
 [node name="TimeMachine" parent="." unique_id=545265893 instance=ExtResource("8_1jcvg")]
 position = Vector2(279, 379)
+<<<<<<< Updated upstream
+=======
+
+[node name="Generator_tscn" parent="." unique_id=1681416503 instance=ExtResource("9_xfmuj")]
+position = Vector2(718, 411)
+scale = Vector2(6, 6)
+>>>>>>> Stashed changes
